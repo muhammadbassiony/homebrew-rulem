@@ -5,21 +5,21 @@
 class Rulem < Formula
   desc "AI Assistant Instruction Manager CLI"
   homepage "https://github.com/muhammadbassiony/rulem"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/muhammadbassiony/Rulem/releases/download/v0.1.0/Rulem_Darwin_x86_64.tar.gz"
-      sha256 "ef26728c5d6458e2ce192d750d7bab60d1545f7a0debbabd80a57731dc46e08b"
+      url "https://github.com/muhammadbassiony/Rulem/releases/download/v0.1.1/Rulem_Darwin_x86_64.tar.gz"
+      sha256 "f8c43d60a76ef1845f1d5e18f0cc30ef3b679c736a1215f9ddab680b7718bb34"
 
       def install
         bin.install "rulem"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/muhammadbassiony/Rulem/releases/download/v0.1.0/Rulem_Darwin_arm64.tar.gz"
-      sha256 "ab9a98a544c376fb680d2fe65d4080f90a75e099f79122944928795bc680e0bb"
+      url "https://github.com/muhammadbassiony/Rulem/releases/download/v0.1.1/Rulem_Darwin_arm64.tar.gz"
+      sha256 "ee0c4b0acd174aee9ce57a3aa4410496b1ca3de706aa5375b63d59b62afe6db5"
 
       def install
         bin.install "rulem"
@@ -28,16 +28,16 @@ class Rulem < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/muhammadbassiony/Rulem/releases/download/v0.1.0/Rulem_Linux_x86_64.tar.gz"
-      sha256 "b01f257da8d49ef6f1805dc7ef2edf1183d44ad6f992d025503ad2a27e7fbf9d"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/muhammadbassiony/Rulem/releases/download/v0.1.1/Rulem_Linux_x86_64.tar.gz"
+      sha256 "c85fa27651dad1a0aeff346e880db73b6fd3a7f94de0a772805d7c64185df68c"
       def install
         bin.install "rulem"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/muhammadbassiony/Rulem/releases/download/v0.1.0/Rulem_Linux_arm64.tar.gz"
-      sha256 "cf88e4d20b8d2440a37149eb4c9820f744d685f62fbdaff6103efc98e6d06da3"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/muhammadbassiony/Rulem/releases/download/v0.1.1/Rulem_Linux_arm64.tar.gz"
+      sha256 "024279fdecd972fb27d1726f6690369ab4fa75375d326aeec776a04e46aa24f9"
       def install
         bin.install "rulem"
       end
